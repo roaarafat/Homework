@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="hello">HELLO</string>
+    <string name="welcome">Welcome,Roaa</string>
+    <string name="donate">Donate</string>
+    <string name="seek">Seek</string>
+    <string name="history">History</string>
+</resources>

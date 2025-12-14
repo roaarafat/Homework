@@ -1,0 +1,42 @@
+<!--<TextView
+    android:id="@+id/tv_hello"
+    android:layout_width="200dp"
+    android:layout_height="100dp"
+    android:text="hellp everyone"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:textColor="@color/red_dark"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/gray"
+    android:gravity="center"
+    /> -->
+<Button
+    android:id="@+id/bt_chlick_me"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Hello Every One Click Me"
+    android:textSize="20sp"
+    android:backgroundTint="@color/pink"
+    android:textAllCaps="false"
+    android:fontFamily="casual"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    />
+<!--<EditText-->
+<!--    android:id="@+id/rt_pass_new"-->
+<!--    android:layout_width="200dp"-->
+<!--    android:layout_height="50dp"-->
+<!--    android:hint="Enter Password"-->
+<!--    android:backgroundTint="@color/purple"-->
+<!--    android:inputType="numberPassword"-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    />-->
+<!--<ImageView-->
+<!--    android:id="@+id/img_cat"-->
+<!--    android:layout_width="200dp"-->
+<!--    android:layout_height="200dp"-->
+<!--    android:src="@drawable/home"-->
+<!--    android:scaleType="fitXY"-->
+
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    />-->

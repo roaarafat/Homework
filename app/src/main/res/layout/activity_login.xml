@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    tools:context=".activities.Login">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/blockblast" />
+    <EditText
+        android:id="@+id/nationalId"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:hint="National Id"
+        android:textColorHint="@color/gray"
+        android:paddingLeft="20dp"
+        android:inputType="number" />
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/nationalId"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Name"
+        android:textColorHint="@color/gray"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/name"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Password"
+        android:textColorHint="@color/gray"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:inputType="textPassword" />
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/password"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Phone"
+        android:textColorHint="@color/gray"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:inputType="phone" />
+    <EditText
+        android:id="@+id/bloodType"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/phone"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColorHint="@color/black"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:hint="A+" />
+    <TextView
+        android:id="@+id/ch_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bloodType"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        android:text="Do you have chronic disease?" />
+    <RadioButton
+        android:id="@+id/ra_Yes"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/ch_Text"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentStart="true"
+        android:text="Yes"
+        android:textColor="@color/black"
+        android:buttonTint="@color/gray"/>
+    <RadioButton
+        android:id="@+id/ra_No"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_toEndOf="@id/ra_Yes"
+        android:layout_alignTop="@id/ra_Yes"
+        android:layout_toRightOf="@id/ra_Yes"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        android:buttonTint="@color/gray"
+        android:text="No" />
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_below="@id/ra_Yes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Register"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/orange_dark"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textPart1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerButton"
+        android:text="Do you have an account:"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:paddingLeft="85dp"
+        android:layout_marginTop="7dp"
+        />
+
+    <TextView
+        android:id="@+id/textLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerButton"
+        android:layout_toEndOf="@id/textPart1"
+        android:layout_marginStart="4dp"
+        android:text="Login"
+        android:textColor="@color/orange"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="7dp"/>
+
+</RelativeLayout>
