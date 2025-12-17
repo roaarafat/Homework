@@ -57,7 +57,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:background="#BBC6EB"
+        android:background="#EFEFEF"
         android:gravity="center"
         android:orientation="horizontal"
         android:padding="2dp"
@@ -70,14 +70,16 @@
             android:layout_height="20dp"
             android:text="4.5"
             android:textSize="12sp"
+            android:textColor="@color/gray_dark"
             android:gravity="center"
             tools:layout_editor_absoluteX="162dp"
             tools:layout_editor_absoluteY="165dp" />
 
         <ImageView
             android:layout_width="15dp"
-            android:layout_height="15dp"
-            android:background="@drawable/staricon"
+            android:layout_height="24dp"
+            android:src="@drawable/staricon"
+            app:tint="@color/blue"
             tools:layout_editor_absoluteX="27dp"
             tools:layout_editor_absoluteY="199dp" />
     </LinearLayout>
@@ -87,11 +89,71 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="3dp"
+        android:layout_marginTop="7dp"
         android:text="  161 MB"
         android:textColor="#5D5D5D"
         android:gravity="center"
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/linearLayout"
         app:layout_constraintTop_toBottomOf="@+id/tx_item" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/conLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="#EFEFEF"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/tx_Size"
+        app:layout_constraintTop_toBottomOf="@+id/tx_item">
+
+        <ImageView
+            android:id="@+id/img_event"
+            android:layout_width="15dp"
+            android:layout_height="24dp"
+            android:src="@drawable/eventapp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/blue" />
+
+        <TextView
+            android:id="@+id/tx_event"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:text="Event"
+            android:textColor="@color/gray_dark"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/img_event"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:visibility="gone"
+        android:id="@+id/conLayout3"
+        app:layout_constraintStart_toEndOf="@+id/conLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/tx_item">
+
+        <TextView
+            android:id="@+id/tx_ends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#EFEFEF"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="End"
+            android:textColor="@color/gray_dark"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

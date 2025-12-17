@@ -25,12 +25,12 @@ public class RecyelerViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_recyeler_view);
         rv=findViewById(R.id.rv);
         itemAppArrayList= new ArrayList<>();
-        itemAppArrayList.add(new ItemApp("1",R.drawable.blockblast,"Block Blast!","Puzzle • Block • Casual • Offline","4.5","161 MB"));
-        itemAppArrayList.add(new ItemApp("2",R.drawable.vita,"Vita Mahjong","Board • Puzzle • Mahjong solitaire","4.6","142 MB"));
-        itemAppArrayList.add(new ItemApp("3",R.drawable.jigsol,"Jigsolitaire","Puzzle ","4.3","71 MB"));
-        itemAppArrayList.add(new ItemApp("4",R.drawable.explorer,"Tile Explorer - Triple Match","Puzzle • Match 3 • Casual • Offline","4.5","Ends in 6 days"));
-        itemAppArrayList.add(new ItemApp("5",R.drawable.watermatch,"Water Match - ASMR Water Sort"," Casual","4.7","174 MB"));
-        itemAppArrayList.add(new ItemApp("6",R.drawable.roblex,"Roblex","Adventure • Simulation • Sandbox","4.4","Ends on 29/12/2025"));
+        itemAppArrayList.add(new ItemApp("1",R.drawable.blockblast,"Block Blast!","Puzzle • Block • Casual • Offline","4.5","161 MB","","",0));
+        itemAppArrayList.add(new ItemApp("2",R.drawable.vita,"Vita Mahjong","Board • Puzzle • Mahjong solitaire","4.6","142 MB","","",0));
+        itemAppArrayList.add(new ItemApp("3",R.drawable.jigsol,"Jigsolitaire","Puzzle ","4.3","71 MB","","",0));
+        itemAppArrayList.add(new ItemApp("4",R.drawable.explorer,"Tile Explorer - Triple Match","Puzzle • Match 3 • Casual • Offline","4.5","","Event","Ends in 6 days",R.drawable.eventapp));
+        itemAppArrayList.add(new ItemApp("5",R.drawable.watermatch,"Water Match - ASMR Water Sort"," Casual","4.7","174 MB","","",0));
+        itemAppArrayList.add(new ItemApp("6",R.drawable.roblex,"Roblex","Adventure • Simulation • Sandbox","4.4","","Event","Ends on 29/12/2025",R.drawable.eventapp));
 
         itemAppAdapter=new ItemAppAdapter(itemAppArrayList,RecyelerViewActivity.this);
         rv.setLayoutManager(new LinearLayoutManager(RecyelerViewActivity.this));
